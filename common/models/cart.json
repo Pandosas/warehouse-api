@@ -1,0 +1,43 @@
+{
+  "name": "Cart",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "additional_information": {
+      "type": "string"
+    },
+    "user_id": {
+      "type": "string",
+      "required": true
+    },
+    "created": {
+      "type": "date"
+    },
+    "total": {
+      "type": "string",
+      "required": true
+    },
+    "tax": {
+      "type": "number",
+      "required": true
+    },
+    "sub_total": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "items": {
+      "type": "hasMany",
+      "model": "CartItem",
+      "foreignKey": "cart_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

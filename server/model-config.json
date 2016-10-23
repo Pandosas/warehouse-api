@@ -1,0 +1,63 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "warehouse-database"
+  },
+  "AccessToken": {
+    "dataSource": "warehouse-database",
+    "public": true
+  },
+  "ACL": {
+    "dataSource": "warehouse-database",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "warehouse-database",
+    "public": true
+  },
+  "Role": {
+    "dataSource": "warehouse-database",
+    "public": true
+  },
+  "Product": {
+    "dataSource": "warehouse-database",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Cart": {
+    "dataSource": "warehouse-database",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Category": {
+    "dataSource": "warehouse-database",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "CartItem": {
+    "dataSource": "warehouse-database",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "UserInfo": {
+    "dataSource": "warehouse-database",
+    "public": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "warehouse-database": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "warehouse-database",
+    "name": "warehouse-database",
+    "connector": "mongodb"
+  },
+  "db": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "warehouse-database",
+    "name": "db",
+    "connector": "mongodb"
+  }
+}
